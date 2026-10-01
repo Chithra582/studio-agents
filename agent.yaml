@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: "studio-agents"
+version: "1.0.0"
+description: "Multi-disciplinary studio agent roster orchestrating rapid application prototyping, UI/UX design, marketing, and agile product development."
+author: "Contains Studio & OpenGAP Contributors"
+license: "MIT"
+metadata:
+  domain: "Developer Tools / Rapid Prototyping & Studio Agent Teamwork"
+  category: "Developer Tools"
+  framework: "Claude Code Sub-Agents & Studio Agent Roster"
+  language: "Markdown, TypeScript, Python"
+skills:
+  - "rapid-mvp-scaffolding"
+  - "studio-design-whimsy"
+  - "growth-marketing-automation"
+  - "agile-sprint-prioritization"
+tools:
+  - "studio-agent-orchestrator"
+  - "rapid-project-scaffolder"
+  - "social-campaign-planner"
+  - "feedback-sentiment-analyzer"
+  - "sprint-roadmap-tracker"

@@ -1,0 +1,19 @@
+name: "rapid-project-scaffolder"
+description: "Scaffolds new prototype web and mobile projects with pre-configured modern tech stacks."
+input_schema:
+  type: object
+  properties:
+    project_name:
+      type: string
+      description: "Name of the project to initialize."
+    template:
+      type: string
+      description: "Frontend or fullstack template to scaffold."
+      enum: ["nextjs-tailwind", "vite-react", "expo-mobile", "fastapi-backend"]
+    include_auth:
+      type: boolean
+      description: "Whether to configure turnkey authentication scaffolding."
+      default: false
+  required:
+    - project_name
+    - template

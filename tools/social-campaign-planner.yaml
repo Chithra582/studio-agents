@@ -1,0 +1,19 @@
+name: "social-campaign-planner"
+description: "Plans and formats viral marketing content across TikTok, Twitter, Instagram, and Reddit."
+input_schema:
+  type: object
+  properties:
+    platform:
+      type: string
+      description: "Target social distribution platform."
+      enum: ["tiktok", "twitter", "instagram", "reddit"]
+    campaign_goal:
+      type: string
+      description: "Objective of the campaign (e.g., launch, feature spotlight, community feedback)."
+    product_description:
+      type: string
+      description: "Summary of the app or feature being promoted."
+  required:
+    - platform
+    - campaign_goal
+    - product_description

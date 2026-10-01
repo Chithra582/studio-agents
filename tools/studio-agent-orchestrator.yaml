@@ -1,0 +1,19 @@
+name: "studio-agent-orchestrator"
+description: "Dispatches and coordinates multi-agent department handoffs across design, engineering, and marketing."
+input_schema:
+  type: object
+  properties:
+    department:
+      type: string
+      description: "Target studio department."
+      enum: ["design", "engineering", "marketing", "product", "project-management", "studio-operations", "testing"]
+    agent_name:
+      type: string
+      description: "Identifier of the specific specialist sub-agent to invoke."
+    task_brief:
+      type: string
+      description: "Detailed assignment brief and context."
+  required:
+    - department
+    - agent_name
+    - task_brief

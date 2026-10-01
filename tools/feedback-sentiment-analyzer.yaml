@@ -1,0 +1,19 @@
+name: "feedback-sentiment-analyzer"
+description: "Analyzes user reviews, sentiment trends, and feature requests to guide product iterations."
+input_schema:
+  type: object
+  properties:
+    source_type:
+      type: string
+      description: "Feedback channel to analyze."
+      enum: ["app_store_reviews", "discord_feedback", "user_interviews", "support_tickets"]
+    feedback_text:
+      type: string
+      description: "Raw or batched customer feedback text."
+    top_issues_count:
+      type: integer
+      description: "Number of top themes to extract."
+      default: 5
+  required:
+    - source_type
+    - feedback_text

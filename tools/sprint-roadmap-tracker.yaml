@@ -1,0 +1,18 @@
+name: "sprint-roadmap-tracker"
+description: "Tracks sprint delivery velocity, backlog prioritization, and feature flag releases."
+input_schema:
+  type: object
+  properties:
+    action:
+      type: string
+      description: "Sprint tracking operation."
+      enum: ["create_milestone", "update_task_status", "get_burndown", "summarize_sprint"]
+    sprint_id:
+      type: string
+      description: "Identifier for the active sprint cycle."
+    task_details:
+      type: object
+      description: "Task title, priority level, and assigned department."
+  required:
+    - action
+    - sprint_id
